@@ -1,0 +1,21 @@
+# Default WebServer properties if not otherwise provided
+# Note: Find documentation: https://tomcat.apache.org/tomcat-9.0-doc/config/http.html
+
+# Disable DNS lookups from callers to run faster
+enableLookups=false
+
+# Initial worker threads to spawn
+minSpareThreads=4
+
+# Max worker threads to spawn
+maxThreads=12
+
+# HTTPS Configuration
+# NOTE: Application needs to provide keystore.  Can generate local signature using
+# keytool -genkey -alias %s -keyalg RSA -keystore %s -storepass %s -validity 720 -keysize 2048 -deststoretype pkcs12
+
+protocol=HTTP/1.1
+clientAuth=false
+sslProtocol=TLS
+SSLEnabled=true
+sslEnabledProtocols=TLSv1+TLSv1.1+TLSv1.2

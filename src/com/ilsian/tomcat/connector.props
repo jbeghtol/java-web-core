@@ -1,0 +1,11 @@
+# Default WebServer properties if not otherwise provided
+# Note: Find documentation: https://tomcat.apache.org/tomcat-9.0-doc/config/http.html
+
+# Disable DNS lookups from callers to run faster
+enableLookups=false
+
+# Initial worker threads to spawn
+minSpareThreads=4
+
+# Max worker threads to spawn
+maxThreads=12
