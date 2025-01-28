@@ -1,7 +1,11 @@
-DL JAVA CORE DYNAMIC WEB
+JAVA CORE DYNAMIC WEB
 ------------------------
 This project contains the core elements to deploy dynamic web services
-in java using a standard java application.  The current list of dependencies
+in java using a standard java application.  This project is not useful
+by itself, but is used a submodule in other dynamic web projects to include
+the common web components.
+
+The current list of dependencies
 includin in this project include:
 
 LIB: Embedded Tomcat (java servlet container server)
